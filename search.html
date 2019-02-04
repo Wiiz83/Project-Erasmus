@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+			<title>SEARCH - ERASMUS+ IRELAND</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.onvisible.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="index.html" id="logo"><img src="images/logo.png" alt="" /></a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="news.html">News</a></li>	
+							<li><a href="services.html">Services</a>
+							 <ul>
+									<li><a href="#">Accomodation</a></li>
+									<li><a href="#">Colleges</a></li>
+									<li><a href="#">Transportation</a></li>
+									<li><a href="#">Colleges</a></li>
+									<li><a href="#">Local Services</a></li>
+								</ul>
+								</li>
+							<li><a href="cities.html">Cities</a>
+							<ul>
+									<li><a href="#">Dublin</a></li>
+									<li><a href="#">Cork</a></li>
+									<li><a href="#">Galway</a></li>
+									<li><a href="#">Limerick</a></li>
+									<li><a href="#">Carlow</a></li>
+									<li><a href="#">Sligo</a></li>
+									<li><a href="#">Kerry</a></li>
+									<li><a href="#">Waterford</a></li>
+									<li><a href="#">Letterkenny</a></li>
+								</ul></li>
+							<li><a href="search.html"  class="active">Search</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+					<h3 style="text-align:center; font-size: 1.95em;">RESEARCH A SERVICE IN A PARTICULAR CITY</h3>
+						<section id="banner">
+				<header>
+						<div class="searching">
+
+							<div class="main_search">
+							
+								<div class="ui-widget">
+									<input type="text" id="city" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}">
+
+								</div></br><p>For example : Cork, Dublin, Galway...</p>
+								</br>
+								<div class="ui-widget">
+									<input type="text" id="service" value="Service" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Service';}">
+								</div></br><p>For example : Accomodation, Transportation, Events...</p></br></br></br>
+
+								<div class="brows_button_3">
+									<a href="#" onclick="clickSearch()">Search</a>
+								</div>
+							</div>
+					</div>
+				</header>
+			</section>
+
+
+
+        </div>
+
+
+
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					
+					<div class="row">
+						<div class="12u">
+							
+							<!-- Contact -->
+								<section class="contact">
+									<header>
+										<h3>Nisl turpis nascetur interdum?</h3>
+									</header>
+									<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+									</ul>
+								</section>
+							
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; Erasmus+ All rights reserved.</li>
+									</ul>
+								</div>
+							
+						</div>
+					
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<script language="javascript">
+			 $(document).ready(function() {
+		
+	$(".details").hide();
+			
+	$(".cork li .lien").addClass('afficher');
+	$(".cork li .lien").html("Cork");
+
+	
+	$(".cork li .afficher").click(
+		function() {
+			$("#txcork").show("slow");
+			$(this).removeClass('afficher');
+			$(this).addClass('reduire');
+			return false;
+	});
+
+
+
+
+
+	$(".dublin li .lien").addClass('afficher');
+	$(".dublin li .lien").html("Dublin");
+
+
+	$(".dublin li .afficher").click(
+		function() {
+			$("#maquettes").show("slow");
+			$(this).removeClass('afficher');
+			$(this).addClass('reduire');
+			return false;
+	});
+
+
+$(".listes-a-propos li .afficher").click(
+		function() {
+			$("#maquettes").show("slow");
+			$(this).removeClass('afficher');
+			$(this).addClass('reduire');
+			return false;
+	});
+
+
+$(".listes-a-propos li .afficher").click(
+		function() {
+			$("#maquettes").show("slow");
+			$(this).removeClass('afficher');
+			$(this).addClass('reduire');
+			return false;
+	});
+
+
+
+
+
+
+
+
+
+
+			
+});
+</script>
+
+
+	</body>
+</html>
